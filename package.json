@@ -1,0 +1,20 @@
+{
+  "name": "jean-geo-coordinate-validator",
+  "version": "1.0.0",
+  "description": "Validates geographical coordinates (latitude, longitude)",
+  "main": "dist/jean-geo-coordinate-validator.js",
+  "scripts": {
+    "test": "open spec/spec-runner.html in browser"
+  },
+  "keywords": [],
+  "author": "Jeremias Andris",
+  "license": "MIT",
+  "dependencies": {
+    "jean-amd": "1.0.3",
+    "jean-type-check": "^1.5.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/je-an/jean-geo-coordinate-validator.git"
+  }
+}
