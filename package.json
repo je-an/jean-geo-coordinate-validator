@@ -1,6 +1,6 @@
 {
   "name": "jean-geo-coordinate-validator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Validates geographical coordinates (latitude, longitude)",
   "main": "dist/jean-geo-coordinate-validator.js",
   "scripts": {

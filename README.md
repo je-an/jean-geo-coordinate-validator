@@ -13,7 +13,12 @@ var obj = new GeoCoordinateValidator();
 - Use it with require.js
 ```js
 require(["path/to/GeoCoordinateValidator"], function(GeoCoordinateValidator){
-    // Work with GeoCoordinateValidator
+    // valid
+    var valid = { longitude: 95, latitude: 35 },
+        invalid = { longitude: 185, latitude: 95};
+
+    GeoCoordinateValidator.isCoordinateValid(valid);   // true
+    GeoCoordinateValidator.isCoordinateValid(invalid); // false
 });
 ```
 - Use it with node.js
@@ -26,7 +31,37 @@ var GeoCoordinateValidator = require("jean-geo-coordinate-validator");
 
 ## API Reference
 
-TBD
+### GeoCoordinateValidator.isCoordinateValid(coordinate) 
+
+Validates a geographical coordinate
+
+**Parameters**
+- **coordinate**: `Object` - coordinate object
+- **coordinate.latitude**: `Number` - longitude value
+- **coordinate.longitude**: `Number` - latitude value
+
+**Returns**
+- `Boolean` - True if coordinate is valid, false otherwise
+
+### GeoCoordinateValidator.isLongitudeValid(longitude) 
+
+Validates longitude value
+
+**Parameters**
+- **longitude**: `Number` - longitude value
+
+**Returns**
+- `Boolean` - True if longitude is valid, false otherwise
+
+### GeoCoordinateValidator.isLatitudeValid(latitude) 
+
+Validates latitude value
+
+**Parameters**
+- **latitude**: `Number` - latitude value
+
+**Returns**
+- `Boolean` - True if latitude is valid, false otherwise
 
 ## Tests
 
